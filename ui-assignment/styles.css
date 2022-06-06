@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #333333;
+}
+
+footer {
+  background: #efefef;
+  font-style: italic;
+}
+
+main {
+  background: #efefef;
+  display: flex;
+  border-top: 5px solid #ccc;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 68%;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+  padding: 45px 0;
+  font-size: 4vw;
+  color: #fff;
+  width: calc(100%/3);
+}
+
+[cube-item='1'],
+[cube-item='8'] {
+  background: #6f98a8;
+}
+
+[cube-item='2'],
+[cube-item='4'] {
+  background: #2b8ead;
+}
+
+[cube-item='3'],
+[cube-item='5'],
+[cube-item='9'] {
+  background: #2f454e;
+}
+
+[cube-item='6'],
+[cube-item='7'] {
+  background: #bfbfbf;
+}
+
+.btn-container {
+  width: 30%;
+  text-align: center;
+  margin-left: 1%;
+}
+
+.btn-container button {
+  background: #72c3dc;
+  border: 1px solid #2b8ead;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px #2b8ead;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 0;
+  margin-top: 25px;
+  text-shadow: 1px 1px 1px #2b8ead;
+  transition: All 250ms ease;
+  max-width: 240px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+}
+
+button:active {
+  top: 5px;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    background: transparent;
+  }
+
+  ul {
+    flex-direction: column;
+
+  }
+
+  ul {
+    max-width: 90%;
+    margin: auto;
+    background: transparent;
+  }
+
+  ul li {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+    color: #333;
+    padding: 15px 0;
+  }
+
+  .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0 23px;
+  }
+
+  .btn-container button {
+    margin: 0;
+    max-width: 35%;
+    font-size: 14px;
+  }
+
+  [cube-item='1'],
+  [cube-item='8'] {
+    background: #efefef;
+    border-left: 5px solid #6f98a8;
+  }
+
+  [cube-item='2'],
+  [cube-item='4'] {
+    border-left: 5px solid #2b8ead;
+    background: #efefef;
+  }
+
+  [cube-item='3'],
+  [cube-item='5'],
+  [cube-item='9'] {
+    border-left: 5px solid #2f454e;
+    background: #efefef;
+  }
+
+  [cube-item='6'],
+  [cube-item='7'] {
+    border-left: 5px solid #bfbfbf;
+    background: #efefef;
+  }
+
+  footer {
+   background: transparent;
+ }
+}
